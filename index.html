@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Whole Number Division</title>
     <script src="./scripts.js" defer type="module"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  
+
   <body>
     <h1>Whole Number Division</h1>
     <form data-form="data-form">
-      <label
+      <label for="dividend"
         ><span>Dividend</span>
-        <input name="dividend" />
+        <input id="dividend" name="dividend" type="number" />
       </label>
       <label>
         <span>Divider</span>
-        <input name="divider" />
+        <input id="divider" name="divider" type="number" />
       </label>
       <button type="submit">Calculate</button>
     </form>
