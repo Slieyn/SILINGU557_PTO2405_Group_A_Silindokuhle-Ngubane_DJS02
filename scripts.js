@@ -32,7 +32,7 @@ form.addEventListener("submit", (event) => {
 
     // Validation for missing inputs
     if (!dividend || !divider) {
-      result.innerText = console.error`"Error: Division not performed. Both values are required in inputs. Try again.”"`;
+      result.innerText = `"Error: Division not performed. Both values are required in inputs. Try again.”"`;
       return;
     }
 
@@ -41,6 +41,7 @@ form.addEventListener("submit", (event) => {
     const numericDivider = extractNumber(divider);
 
     // If either input doesn't contain a valid number, throw an error
+    //
     if (numericDividend === null || numericDivider === null) {
       throw new Error(
         (result.innerText = console.error`"Error: Something critical went wrong. Please reload the page. Dividend: "${dividend}", Divider: "${divider}"`)
